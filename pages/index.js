@@ -1,5 +1,7 @@
 import Nav from "../components/nav";
+import UserBar from "../components/UserBar";
 import Head from "next/head";
+import ArticleCard from "@/components/ArticleCard";
 
 function Home() {
   return (
@@ -8,7 +10,19 @@ function Home() {
         <title>Tech Dsgn Exp</title>
       </Head>
       <Nav />
-      <h1 className="text-9xl">Bang</h1>
+      <UserBar />
+      <div class="card-row">
+        <a href="article/one">
+          <ArticleCard />
+        </a>
+        <a href="article/two">
+          <ArticleCard />
+        </a>
+      </div>
+      <div class="card-row">
+        <ArticleCard />
+        <ArticleCard />
+      </div>
     </div>
   );
 }
